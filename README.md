@@ -9,11 +9,15 @@ The workflow includes data preprocessing, TF-IDF feature extraction, model train
 
 ```
 project/
-│── notebooks/          # Jupyter notebooks for EDA and experiments
-│── scripts/            # Python scripts for preprocessing, training, evaluation
-│── requirements.txt    # Python dependencies
-│── README.md           # Project documentation
-│── .gitignore
+├── data/                # Raw and processed datasets (not included in repo if large)
+├── notebooks/           # Jupyter notebooks used for EDA, experiments, and model development
+├── scipts/                 # Source code for preprocessing, training, and evaluation
+│   ├── preprocessing.py # Custom preprocessing and feature engineering code
+│   ├── train_models.py         # Script to train models (Logistic Regression, Random Forest, XGBoost)
+├── models/              # Saved trained models (pickle/joblib files)
+├── requirements.txt     # Python dependencies
+├── README.md            # Project documentation
+└── .gitignore           # Git ignore file
 ```
 
 ---
